@@ -1,0 +1,31 @@
+html, body {
+  color: white;
+  margin: 5px;
+  padding: : 2px;
+}
+#name{
+  position: absolute;
+  display: inline-block;
+  left: 750px;
+  top: 120px;
+}
+#age{
+  position: absolute;
+  display: inline-block;
+  left: 750px;
+  top: 170px;
+}
+#review{
+  position: absolute;
+  display: inline-block;
+  left: 720px;
+  top: 270px;
+  width: 255px;
+}
+#button{
+  position: absolute;
+  display: inline-block;
+  left: 770px;
+  top: 320px;
+  width: 155px;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+    <script src="p5.js"></script>
+
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAem7dux-LnQUXiRbkYCd9rM4JWd8XlLCU",
+    authDomain: "bringschange-d6241.firebaseapp.com",
+    databaseURL: "https://bringschange-d6241.firebaseio.com",
+    projectId: "bringschange-d6241",
+    storageBucket: "bringschange-d6241.appspot.com",
+    messagingSenderId: "538181038203",
+    appId: "1:538181038203:web:9953ca69353495f522f2de"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+</script>
+
+<script src="p5.dom.min.js"></script>
+<script src="sketch.js"></script>
+
+</head>
+<body>
+
+   <input id="name" type="text" name="name" value="Name">
+   <input id="age" type="text" name="age" value="age">
+   <input id="review" type="text" name="review" value="Type here">
+
+   <button id="button" type="button" name="Submit">Submit</button>
+
+</body>
+</html>
