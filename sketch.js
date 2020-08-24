@@ -1,6 +1,6 @@
 
 var title;
-var name, age, review, question, button;
+var face, age, review, question, button;
 var database;
 
 function setup(){
@@ -12,11 +12,15 @@ function setup(){
    title.html("Rid of COVID-19");
    title.position(displayWidth/2-15,displayHeight/2-400);
 
-   name = select('#name');
-   age = select('#age');
-   review = select('#review');
-   button = select("#button");
-
+   face = createInput("name");
+   face.position(displayWidth/2, displayHeight/2-100);
+  
+   age = createInput("age");
+  age.position(displayWidth/2, displayHeight/2);
+   review = createInput("review");
+   review.position(displayWidth/2, displayHeight/2+100);
+   button = createButton("SUBMIT");
+   button.position(displayWidth/2, displayHeight/2+200);
    
    button.mousePressed((data));
    
@@ -25,7 +29,7 @@ function setup(){
    function data(){
       var ref = database.ref('/');
       var data ={
-        name: name.value(),
+        face: face.value(),
         age: age.value() ,
         review: review.value(),
         
@@ -39,5 +43,7 @@ function draw(){
     fill(255);
     textSize(20);
     text("Your Suggestion to the Goverment...",displayWidth/2-75, displayHeight/2-180);
+
+ 
 
 }
